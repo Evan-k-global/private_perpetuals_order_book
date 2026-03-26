@@ -62,6 +62,7 @@ That remote proof agent fetches the next pending proof job snapshot, builds the 
 ## Key Docs
 
 - [Render deployment and runtime topology](./docs/deployment.md)
+- [Architecture and extensibility](./docs/architecture.md)
 - [Protocol runbook and local operations](./docs/runbook.md)
 - [API and SDK reference](./docs/api.md)
 - [Private-state proof roadmap](./docs/private-state-proof-plan.md)
