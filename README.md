@@ -1,6 +1,6 @@
-# Private Perpetuals Order Book
+# Private Order Book
 
-ShadowBook is a private perpetuals / dark pool demo built on Zeko with:
+ShadowBook is a private order book / dark pool demo built on Zeko with:
 - note-backed private collateral
 - public and private order visibility modes
 - off-chain matching
@@ -64,6 +64,7 @@ That remote proof agent fetches the next pending proof job snapshot, builds the 
 
 - [Render deployment and runtime topology](./docs/deployment.md)
 - [Architecture and extensibility](./docs/architecture.md)
+- [Competitive architecture and privacy landscape](./docs/competitive-architecture-landscape.md)
 - [Protocol runbook and local operations](./docs/runbook.md)
 - [API and SDK reference](./docs/api.md)
 - [Private-state proof roadmap](./docs/private-state-proof-plan.md)
