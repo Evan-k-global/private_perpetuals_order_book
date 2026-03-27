@@ -5,7 +5,7 @@ ShadowBook is a private perpetuals / dark pool demo built on Zeko with:
 - public and private order visibility modes
 - off-chain matching
 - on-chain settlement anchoring through a zkApp
-- proof-precompute support for keeping settlement off the hot path
+- a lean settlement zkApp as the default hosted path
 
 ## What Works
 
@@ -16,6 +16,7 @@ ShadowBook is a private perpetuals / dark pool demo built on Zeko with:
 - withdrawals back to wallet
 - settlement batching and zkApp root commits
 - local operator tooling and proof inspection
+- an advanced proof-heavy contract kept in-repo as a reference path for partner builds
 
 ## Quick Start
 
@@ -43,13 +44,13 @@ pnpm darkpool:serve
 
 ### Demo / hosted single service
 
-Run the server with embedded proof + settlement background loops:
+Run the server with the embedded settlement loop and lean zkApp path:
 
 ```bash
 pnpm render:start
 ```
 
-### Split proving later
+### Advanced proving later
 
 If you want extra proof capacity later, keep the main service running and add:
 
@@ -57,7 +58,7 @@ If you want extra proof capacity later, keep the main service running and add:
 pnpm settlement:worker:proofs:remote
 ```
 
-That remote proof agent fetches the next pending proof job snapshot, builds the proof locally, and uploads the proof artifact back.
+That remote proof agent fetches the next pending proof job snapshot, builds the proof locally, and uploads the proof artifact back. The advanced proof-heavy contract remains available in `zkapp/advanced-contract.ts` as a reference path rather than the hosted default.
 
 ## Key Docs
 
