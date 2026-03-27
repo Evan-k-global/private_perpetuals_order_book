@@ -123,6 +123,10 @@ Status:
 - sequencing root witness enforcement: still future work
 - full matching fairness proof: still future work
 
+For the larger-machine, proof-heavy deployment path, see:
+
+- `/Users/evankereiakes/Documents/Codex/private-order-book/docs/full-mode-implementation.md`
+
 ## Withdrawals
 
 Withdrawals should use the same transition model as trading:
