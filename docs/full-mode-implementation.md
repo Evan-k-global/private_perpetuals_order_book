@@ -86,6 +86,9 @@ Recommended follow-up scripts:
 - `zkapp:get-state:advanced`
 - `zkapp:commit-next:advanced`
 
+These scripts now exist in `package.json` and are the intended entry points for
+the proof-heavy contract path.
+
 That keeps the lean path operationally clean.
 
 ### 2. Treat proving as its own long-lived service
